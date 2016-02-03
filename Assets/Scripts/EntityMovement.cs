@@ -21,6 +21,11 @@ public class EntityMovement : MonoBehaviour
 	    _seeker.StartPath(transform.position, TargetObject.position, OnPathComplete);
 	}
 
+    public void SeekToPath(Vector3 targetLocation)
+    {
+            _seeker.StartPath(transform.position, targetLocation, OnPathComplete);
+    }
+
     void Update()
     {
         if (_path == null)
