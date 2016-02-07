@@ -77,9 +77,9 @@ public class CameraGlobal : MonoBehaviour
                 case "north":
                     RotateCamera("east", "north");
                     break;
-            default:
-                Debug.Log("Invalid Rotate Direction for Camera");
-                break;
+                default:
+                    Debug.Log("Invalid Rotate Direction for Camera");
+                    break;
             }
         }
         if (Input.GetKeyDown((RotateCameraRightKey)))
@@ -99,9 +99,9 @@ public class CameraGlobal : MonoBehaviour
                 case "north":
                     RotateCamera("west", "south");
                     break;
-            default:
-                Debug.Log("Invalid Rotate Direction for Camera");
-                break;
+                default:
+                    Debug.Log("Invalid Rotate Direction for Camera");
+                    break;
             }
         }
 
