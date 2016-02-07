@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class CameraGlobal : MonoBehaviour
 {
@@ -10,8 +11,10 @@ public class CameraGlobal : MonoBehaviour
     public float LevelBoundUppr;
     public float LevelBoundDown;
     */
-    public float PanSpeed = 10.0f;
+    public float DefaultZoomHeight = 10.0f;
+    public float ZoomIncrements = 1.0f;
     public float ZoomSpeed = 10.0f;
+    public float PanSpeed = 10.0f;
     public bool CameraEnabled = true;
 
     private KeyCode MoveCameraForwardKey = KeyCode.W;
@@ -44,6 +47,14 @@ public class CameraGlobal : MonoBehaviour
         if (Input.GetKey(MoveCameraLeftKey))
         {
             PanCamera("west");
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") >= 0)
+        {
+            ZoomCamera(true);
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") <= 0)
+        {
+            ZoomCamera(false);
         }
     }
 
