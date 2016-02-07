@@ -96,7 +96,6 @@ GameObject:
   - 33: {fileID: 55195518}
   - 65: {fileID: 55195517}
   - 23: {fileID: 55195516}
-  - 114: {fileID: 55195519}
   m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -161,30 +160,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 55195514}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &55195519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55195514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &118623137
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +171,6 @@ GameObject:
   - 33: {fileID: 118623141}
   - 65: {fileID: 118623140}
   - 23: {fileID: 118623139}
-  - 114: {fileID: 118623142}
   m_Layer: 9
   m_Name: BarLeftWall
   m_TagString: Untagged
@@ -261,30 +235,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118623137}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &118623142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 118623137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1001 &133269985
 Prefab:
   m_ObjectHideFlags: 0
@@ -339,34 +289,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 478242, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
   m_PrefabInternal: {fileID: 133269985}
---- !u!1 &166301598 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 1962126363}
---- !u!114 &166301602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 166301598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &200277242
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +298,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 200277244}
   - 114: {fileID: 200277243}
-  - 114: {fileID: 200277245}
   - 114: {fileID: 200277246}
   m_Layer: 0
   m_Name: master_control_program
@@ -397,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astarData:
-    dataString: UEsDBBQAAAgIAABYIewNhy2DKgIAAEUEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1Ustu2zAQ/JWCZ7WQVFtIfEvtxG2RJkbcoocihzW1sghTpMBH/Qj8713SsmwFKARI0D5md2b2ja29KNnkjf0F6ZFN2CgvijK7yar0NkuL0c3HoqyKlFf5aJwVaZUhOyYMbIvcvYATmk2yhAmrG3RG8Du1loSSJswrUWnT3JdrnGrrLJtUIC0mzGgX+lQYuoul+/g+0JugOSqH5j9Jr7iEpsVyKQ7Y1eSjWJSPKK90iadU+ukzYWkphe1muX0b+E2htZ52TFgpgJYOs4hBjWJdO4K56nquKosuzjewnwlDnCMY+6JdTQgN2M2VduMsP56RfgxT+bigVGV087UblKUE62rBNy+w52BdL9B1cHa9o1dbkBtYSfxdo3rSc6O9IvOc8dTmLeazHqQnMa2Rb841p90GId8OtM46rY+B3W4qRbMKYo4uv3c7YWMdBZZSB1FvqRcNaf+NVo3m2ohHsbDCL4s/YX25gC78IIx1lIhg4J1+FGozN6K8VJ6jM2Hdo2hE1I1sDjRW2huqZPdRT2Ls3VQbhSF4otaiAun2C5rmhna+y/Tz3sUfgDt90r7LdPc9LI/BvjZNh4mF3p79s/jdN+1CC+WWCIbXF89x57zBGTgIdlA7uVz2aUtcOc1VXko6oziKaP5JE3peiXsNSqEMIfakVbju688ruSkUUQK5OG0WVSDv1FkrRXdGYgb5P8wNtOG8SwPbuTg0uldUqEovuUFUz7E3rnf8B1BLAwQUAAAIAAAAWCHsHn9ddjIAAAAyAAAAEgAkAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAXsibG9ja2VkIjp0cnVlLCJzaG93RXh0cmEiOmZhbHNlLCJwaXZvdCI6IkNlbnRlciJ9UEsDBBQAAAgIAABYIezOQPfidQAAAIMAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoIwEED/5WZselhOZHVgM+yGofFauMGWlGJCjP8udXvDe+8Db5dWiQE6OKuLaqCCKdllXqHDAzfhgx5gaiLGFr2+oibTnog96aevTYOkPToYK8j74u725f7FYPPsJbCESfVJuC/XYoXI7ha3kIumx+8PUEsBAi0AFAAACAgAAFgh7A2HLYMqAgAARQQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAAAAFgh7B5/XXYyAAAAMgAAABIAJAAAAAAAAAAAAAAAdwIAAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAABYIezOQPfidQAAAIMAAAAJACQAAAAAAAAAAAAAAP0CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAMAAwAcAQAAvQMAAAAA
+    dataString: UEsDBBQAAAgIAABYIey/MRWPJwIAAEYEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1Uttum0AQ/ZVqn2kFFKPEb6mduK3SxIpb9aHKwxgGs/Kyi/ZSXyL/e2fXGEykCgnEXM7MOWfe2Mbxkk3f2F8QDtmUZWmel8lNUsW3SZxnNx/zssrjokqzSZLHVYLsFDEwLRb2BSxXbJpEjBvVoNW8uJMbQShxxJzkldLNfbnBmTLWsGkFwmDEtLK+T/qh+1B6CO8jvQm6QGlR/yfpZCGgabFc8SN2NWkWitKM8lKVeE7Fnz4TlhKCm26WPbSe3wxa42jHiJUcaGk/ixjUyDe1JZirrueqMmjDfA2HOdfEOYCxL8rWhNCA2V5pN0nS0wXpxziVTnJKVVo1X7tBSUywtubF9gUOBRjbC3QdnF/v6OQOxBbWAn/XKJ/UQisnyTyrHbU5g+m8B+lJzGostpea826jkGtHWied1ifPbj8TvFl7MbPh927PTaijwEooL+ot9aIm7b/RqsFcE/Ao5lf4ZfAnbIYL6MIPXBtLiQAGzqpHLrcLzcuh8hKdc2MfecODbmSzp7FWTlMluw96EmNnZ0pL9MEztRYlCHtY0jQ7tvNdpp/3Lv4AhVVn7btMd9/j8hDsa+N4nFiq3cU/g99d0y4Vl3aFoIt68Bz31mmcgwVvB7WTy2WfNsS1oLnSCUFnFEYRzT9xRM8rca9BShQ+xJ6U9Nd9/XklN7kkSiCW582CCuTdQF3SoZGaXv8PCw2tv+9Sw27Bj43qJeWyUqtCI8rnofn0D1BLAwQUAAAIAAAAWCHsHn9ddjIAAAAyAAAAEgAkAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAXsibG9ja2VkIjp0cnVlLCJzaG93RXh0cmEiOmZhbHNlLCJwaXZvdCI6IkNlbnRlciJ9UEsDBBQAAAgIAABYIezOQPfidQAAAIMAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoIwEED/5WZselhOZHVgM+yGofFauMGWlGJCjP8udXvDe+8Db5dWiQE6OKuLaqCCKdllXqHDAzfhgx5gaiLGFr2+oibTnog96aevTYOkPToYK8j74u725f7FYPPsJbCESfVJuC/XYoXI7ha3kIumx+8PUEsBAi0AFAAACAgAAFgh7L8xFY8nAgAARgQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAAAAFgh7B5/XXYyAAAAMgAAABIAJAAAAAAAAAAAAAAAdAIAAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAABYIezOQPfidQAAAIMAAAAJACQAAAAAAAAAAAAAAPoCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAMAAwAcAQAAugMAAAAA
     upgradeData: 
     data_backup: 
     file_cachedStartup: {fileID: 0}
@@ -484,18 +405,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!114 &200277245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 200277242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c89de3babe23e46669cbf998c0200cad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateInterval: 5
 --- !u!114 &200277246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +563,6 @@ GameObject:
   - 33: {fileID: 303842786}
   - 65: {fileID: 303842785}
   - 23: {fileID: 303842784}
-  - 114: {fileID: 303842787}
   m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -719,30 +627,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 303842782}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &303842787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 303842782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &368900000
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +669,6 @@ GameObject:
   - 33: {fileID: 390461763}
   - 65: {fileID: 390461762}
   - 23: {fileID: 390461761}
-  - 114: {fileID: 390461764}
   m_Layer: 9
   m_Name: BarBackWall
   m_TagString: Untagged
@@ -850,30 +733,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 390461759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &390461764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 390461759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &507744023
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +744,6 @@ GameObject:
   - 33: {fileID: 507744027}
   - 65: {fileID: 507744026}
   - 23: {fileID: 507744025}
-  - 114: {fileID: 507744028}
   m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -950,30 +808,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507744023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &507744028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 507744023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &561622195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,34 +842,6 @@ Transform:
   - {fileID: 133269986}
   m_Father: {fileID: 1216565965}
   m_RootOrder: 1
---- !u!1 &605902926 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 1826101280}
---- !u!114 &605902930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605902926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &630837162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +853,6 @@ GameObject:
   - 33: {fileID: 630837165}
   - 136: {fileID: 630837164}
   - 23: {fileID: 630837163}
-  - 114: {fileID: 630837167}
   m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1113,30 +918,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &630837167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 630837162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1.17, y: 1.48}
-  circleRadius: 0.68
-  circleResolution: 3
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 0
 --- !u!1 &674450820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +960,6 @@ GameObject:
   - 33: {fileID: 726930536}
   - 65: {fileID: 726930535}
   - 23: {fileID: 726930534}
-  - 114: {fileID: 726930537}
   m_Layer: 9
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -1244,30 +1024,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726930532}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &726930537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 726930532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &730972868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,8 +1184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1270c6120c1dbc4d9e4ac073e776aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanSpeed: 5
+  DefaultZoomHeight: 10
+  ZoomIncrements: 1
   ZoomSpeed: 5
+  PanSpeed: 5
   CameraEnabled: 1
 --- !u!1 &1038352826
 GameObject:
@@ -1667,7 +1425,6 @@ GameObject:
   - 33: {fileID: 1088125503}
   - 65: {fileID: 1088125502}
   - 23: {fileID: 1088125501}
-  - 114: {fileID: 1088125504}
   m_Layer: 9
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -1732,30 +1489,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1088125499}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1088125504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1088125499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1164377418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1500,6 @@ GameObject:
   - 33: {fileID: 1164377422}
   - 65: {fileID: 1164377421}
   - 23: {fileID: 1164377420}
-  - 114: {fileID: 1164377423}
   m_Layer: 9
   m_Name: BarRightWall
   m_TagString: Untagged
@@ -1832,86 +1564,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1164377418}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1164377423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1164377418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
---- !u!1 &1185690466 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 133269985}
---- !u!114 &1185690470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1185690466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
---- !u!1 &1199071255 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 1481025067}
---- !u!114 &1199071259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1199071255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1216565964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,34 +1699,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &1376115860 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 273793030}
---- !u!114 &1376115864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1376115860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1001 &1400079141
 Prefab:
   m_ObjectHideFlags: 0
@@ -2176,14 +1800,6 @@ Prefab:
       propertyPath: m_Name
       value: BasicHouse (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 478242, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5708741
-      objectReference: {fileID: 0}
-    - target: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
   m_IsPrefabParent: 0
@@ -2191,34 +1807,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 478242, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
   m_PrefabInternal: {fileID: 1481025067}
---- !u!1 &1625847883 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 1400079141}
---- !u!114 &1625847887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625847883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1771137113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,14 +1980,6 @@ Prefab:
       propertyPath: m_Name
       value: BasicHouse (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 478242, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5708741
-      objectReference: {fileID: 0}
-    - target: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
   m_IsPrefabParent: 0
@@ -2418,7 +1998,6 @@ GameObject:
   - 33: {fileID: 1853949360}
   - 65: {fileID: 1853949359}
   - 23: {fileID: 1853949358}
-  - 114: {fileID: 1853949361}
   m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -2483,30 +2062,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1853949356}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1853949361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1853949356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1932931087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2073,6 @@ GameObject:
   - 33: {fileID: 1932931091}
   - 65: {fileID: 1932931090}
   - 23: {fileID: 1932931089}
-  - 114: {fileID: 1932931092}
   m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
@@ -2583,30 +2137,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1932931087}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1932931092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1932931087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1933103263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,34 +2270,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 478242, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
   m_PrefabInternal: {fileID: 1962126363}
---- !u!1 &1970537291 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105812, guid: f5acb4f8427abbb469cd83571c92f05d, type: 2}
-  m_PrefabInternal: {fileID: 1790710643}
---- !u!114 &1970537292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1970537291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &1972413319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,7 +2312,6 @@ GameObject:
   - 33: {fileID: 1973529880}
   - 65: {fileID: 1973529879}
   - 23: {fileID: 1973529878}
-  - 114: {fileID: 1973529881}
   m_Layer: 9
   m_Name: BarFrontWall
   m_TagString: Untagged
@@ -2875,30 +2376,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973529876}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1973529881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973529876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
 --- !u!1 &2121035546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2387,6 @@ GameObject:
   - 33: {fileID: 2121035550}
   - 65: {fileID: 2121035549}
   - 23: {fileID: 2121035548}
-  - 114: {fileID: 2121035551}
   m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -2975,27 +2451,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121035546}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2121035551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121035546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bee0a6fa1f5d4f4db481219040523c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  mesh: {fileID: 0}
-  rectangleSize: {x: 1, y: 1}
-  circleRadius: 1
-  circleResolution: 6
-  height: 1
-  meshScale: 1
-  center: {x: 0, y: 0, z: 0}
-  updateDistance: 0.4
-  isDual: 0
-  cutsAddedGeom: 1
-  updateRotationDistance: 10
-  useRotation: 1
