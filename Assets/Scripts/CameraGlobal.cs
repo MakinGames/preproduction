@@ -21,6 +21,8 @@ public class CameraGlobal : MonoBehaviour
     private KeyCode MoveCameraBackwardKey = KeyCode.S;
     private KeyCode MoveCameraRightKey = KeyCode.D;
     private KeyCode MoveCameraLeftKey = KeyCode.A;
+    private KeyCode RotateCameraLeftKey = KeyCode.Q;
+    private KeyCode RotateCameraRightKey = KeyCode.E;
 
     //_currentRotation refers to the left edge
     private string _currentRotation = "south";
@@ -56,6 +58,54 @@ public class CameraGlobal : MonoBehaviour
         {
             ZoomCamera(false);
         }
+
+        #region Camera Rotate
+        if (Input.GetKeyDown((RotateCameraLeftKey)))
+        {
+            string currentRotation = GetCurrentRotation();
+            switch (currentRotation)
+            {
+                case "south":
+                    RotateCamera("west", "south");
+                    break;
+                case "west":
+                    RotateCamera("north", "west");
+                    break;
+                case "east":
+                    RotateCamera("south", "east");
+                    break;
+                case "north":
+                    RotateCamera("east", "north");
+                    break;
+            default:
+                Debug.Log("Invalid Rotate Direction for Camera");
+                break;
+            }
+        }
+        if (Input.GetKeyDown((RotateCameraRightKey)))
+        {
+            string currentRotation = GetCurrentRotation();
+            switch (currentRotation)
+            {
+                case "south":
+                    RotateCamera("east", "north");
+                    break;
+                case "west":
+                    RotateCamera("south", "east");
+                    break;
+                case "east":
+                    RotateCamera("north", "west");
+                    break;
+                case "north":
+                    RotateCamera("west", "south");
+                    break;
+            default:
+                Debug.Log("Invalid Rotate Direction for Camera");
+                break;
+            }
+        }
+
+        #endregion
     }
 
     private void PanCamera(string moveDirection)
