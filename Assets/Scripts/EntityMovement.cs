@@ -11,12 +11,10 @@ public class EntityMovement : MonoBehaviour
     private Path _path;
     private int _currentWaypoint;
     private Seeker _seeker;
-    private CharacterController _characterController;
 
 	void Start ()
 	{
 	    _seeker = GetComponent<Seeker>();
-	    _characterController = GetComponent<CharacterController>();
 
 	    _seeker.StartPath(transform.position, TargetObject.position, OnPathComplete);
 	}
